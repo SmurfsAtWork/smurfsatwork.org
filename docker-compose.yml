@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: "smurfsatwork.org"
+    build:
+      dockerfile: Dockerfile
+      context: .
+    restart: "always"
+    ports:
+      - "26111:8080"
+    stdin_open: true
